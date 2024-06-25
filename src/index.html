@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسک دوره جاوااسکریپت</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="main-sec container">
+    <div class="main-sec_head">
+      <h1 class="transactions-list_header">لیست تراکنش‌ ها</h1>
+      <div>
+        <input type="text" class="search" placeholder="جستجو تراکنش">
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+      </div>
+    </div>
+    <div>
+      <button class="btn load-btn">بارگذاری تراکنش ها</button>
+    </div>
+    <div class="translist-sec">
+      <h3 class="user-translist_header">لیست تراکنش‌ های شما</h3>
+      <table class="translist">
+        <thead>
+          <tr class="titles">
+            <th>ردیف</th>
+            <th>نوع تراکنش‌</th>
+            <th>مبلغ<span class="chev-price"><i class="fa-solid fa-chevron-down"></i></span></th>
+            <th>شماره پیگیری</th>
+            <th>تاریخ تراکنش‌<span class="chev-date"><i class="fa-solid fa-chevron-down"></i></span></th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+
+
+  <script src="./js/index.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
